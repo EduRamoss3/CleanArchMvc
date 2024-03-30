@@ -1,4 +1,5 @@
-﻿using CleanArchMvc.Domain.Validation;
+﻿using CleanArchMvc.Domain.Entities.Base;
+using CleanArchMvc.Domain.Validation;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

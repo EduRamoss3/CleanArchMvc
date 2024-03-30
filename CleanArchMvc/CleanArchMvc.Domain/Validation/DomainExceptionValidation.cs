@@ -21,8 +21,8 @@ namespace CleanArchMvc.Domain.Validation
         {
             char[] stringValueToArray = stringValue.ToCharArray();
             char[] invalidCharacters = new char[] {
-            '\0', '\a', '\b', '\f', '\n', '\r', '\t', '\v', // Caracteres de escape
-            ' ', '!', '"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/', // Caracteres especiais
+            '\0', '\a', '\b', '\f', '\n', '\r', '\t', '\v' // Caracteres de escape
+            , '!', '"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/', // Caracteres especiais
             ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~', // Outros caracteres especiais
             '¨', '§', '°', 'ª', 'º', '´', '`', '£', '¢', '¬', '¦', 'ª', '¯', '·', 'Ç', 'ç' // Caracteres especiais diversos
             };

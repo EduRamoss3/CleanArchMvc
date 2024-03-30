@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "igRSIysA824ChPFzKFlToFalPSYh2XN/cWe8RySH+R9ym+ta9MZUMVbBW8TSXlynjvRvrXckFVOPQB29GjYzCg==",
+  "dgSpecHash": "H+KzHoP1PtHlC5+9JaZJfiiRIpszLsTXgIa6F4cMe+Bc/m+3zC9OkxwxS4OiI+8YyJvLY0XDHT3vkA13ZO3nZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Eduardo\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
+    "C:\\Users\\Eduardo\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\Eduardo\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

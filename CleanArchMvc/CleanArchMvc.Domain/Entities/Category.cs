@@ -1,4 +1,5 @@
-﻿using CleanArchMvc.Domain.Validation;
+﻿using CleanArchMvc.Domain.Entities.Base;
+using CleanArchMvc.Domain.Validation;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -11,7 +12,6 @@ namespace CleanArchMvc.Domain.Entities
     public sealed class Category : Entity
     {
         public string Name { get; private set; }
-
         public Category(string name)
         {
             ValidateDomain(name);
@@ -40,6 +40,8 @@ namespace CleanArchMvc.Domain.Entities
             DomainExceptionValidation.When(name.Length < 3,
                 "Invalid name, too short, minimum 3 characters");
             DomainExceptionValidation.When(name.Length > 50, "Invalid name, too long, maximum 50 characters");
+            DomainExceptionValidation.When(DomainExceptionValidation.ValidateInvalidCharacters(name),
+                "Invalid name. Name contains invalid characters.");
             Name = name;
         }
         private void ValidateDomain(int id)
