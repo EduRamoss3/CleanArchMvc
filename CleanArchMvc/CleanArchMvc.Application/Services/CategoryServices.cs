@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
 using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
+using CleanArchMvc.Domain.Entities;
 using CleanArchMvc.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CleanArchMvc.Application.Services
 {
@@ -26,24 +23,28 @@ namespace CleanArchMvc.Application.Services
             return _mapper.Map<IEnumerable<CategoryDTO>>(categoriesEntity);
         }
 
-        public Task<CategoryDTO> GetById(int? id)
+        public async Task<CategoryDTO> GetById(int? id)
         {
-            throw new NotImplementedException();
+            var categoryEntity = await _categoryReposity.GetByIdAsync(id);
+            return _mapper.Map<CategoryDTO>(categoryEntity);
         }
 
-        public Task Add(CategoryDTO categoryDTO)
+        public async Task Add(CategoryDTO categoryDTO)
         {
-            throw new NotImplementedException();
+            var categoryToCategoryDTO = _mapper.Map<Category>(categoryDTO);
+            await _categoryReposity.CreateAsync(categoryToCategoryDTO);
         }
 
-        public Task Update(CategoryDTO categoryDTO)
+        public async Task Update(CategoryDTO categoryDTO)
         {
-            throw new NotImplementedException();
+            var categoryToCategoryDTO = _mapper.Map<Category>(categoryDTO);
+            await _categoryReposity.UpdateAsync(categoryToCategoryDTO);
         }
 
-        public Task Remove(int? id)
+        public async Task Remove(int? id)
         {
-            throw new NotImplementedException();
+            var category = await _categoryReposity.GetByIdAsync(id);
+            await _categoryReposity.RemoveAsync(category);
         }
     }
 }

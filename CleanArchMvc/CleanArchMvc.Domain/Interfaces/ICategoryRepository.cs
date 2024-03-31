@@ -2,7 +2,7 @@
 
 namespace CleanArchMvc.Domain.Interfaces
 {
-    public interface ICategoryReposity
+    public interface ICategoryRepository
     {
         Task<IEnumerable<Category>> GetCategoriesAsync();
         Task<Category> GetByIdAsync(int? id);
