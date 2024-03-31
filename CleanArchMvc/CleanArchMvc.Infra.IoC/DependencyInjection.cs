@@ -13,10 +13,10 @@ namespace CleanArchMvc.Infra.IoC
         {
             services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
-            b=> b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
+            b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
 
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<ICategoryReposity, CategoryRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             return services;
         }
     }

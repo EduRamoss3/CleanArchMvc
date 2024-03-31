@@ -1,11 +1,6 @@
 ﻿using CleanArchMvc.Domain.Entities.Base;
 using CleanArchMvc.Domain.Validation;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Entities
 {
@@ -27,7 +22,7 @@ namespace CleanArchMvc.Domain.Entities
         {
             ValidateDomain(name);
         }
-     
+
         public ICollection<Product> Products { get; set; }
 
         private void ValidateDomain(string name)
@@ -43,7 +38,7 @@ namespace CleanArchMvc.Domain.Entities
                 "Invalid name. Name contains invalid characters.");
             Name = name;
         }
-        
+
         public override int GetHashCode()
         {
             return Id.GetHashCode();

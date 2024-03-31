@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchMvc.Infra.Data.Repositories
 {
-    public class CategoryRepository : ICategoryReposity
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly AppDbContext _context;
-        public CategoryRepository(AppDbContext context) 
-        { 
+        public CategoryRepository(AppDbContext context)
+        {
             _context = context;
         }
 
