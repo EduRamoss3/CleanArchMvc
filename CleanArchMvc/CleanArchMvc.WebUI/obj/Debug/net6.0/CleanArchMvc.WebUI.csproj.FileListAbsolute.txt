@@ -86,3 +86,11 @@ C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\D
 C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
