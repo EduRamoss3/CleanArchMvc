@@ -43,5 +43,17 @@ namespace CleanArchMvc.DomainTests
             Action action = () => new Category(1, "nome da categoria");
             action.Should().NotThrow<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
         }
+        [Fact(DisplayName = "Create Category With Invalid Name size too long")]
+        public void CreateCategory_WithInvalidSizeBigger_ResultObjectNotValid()
+        {
+            Action action = () => new Category(1, "nome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categorianome da categoria");
+            action.Should().Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>().WithMessage("Invalid name, too long, maximum 50 characters");
+        }
+        [Fact(DisplayName = "Create Category With Invalid Name size too short")]
+        public void CreateCategory_WithInvalidSizeSmaller_ResultObjectNotValid()
+        {
+            Action action = () => new Category(1, "an");
+            action.Should().Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>().WithMessage("Invalid name, too short, minimum 3 characters");
+        }
     }
 }

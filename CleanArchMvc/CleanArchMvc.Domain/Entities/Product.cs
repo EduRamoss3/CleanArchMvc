@@ -23,9 +23,9 @@ namespace CleanArchMvc.Domain.Entities
                 "Invalid name. Name is required");
             DomainExceptionValidation.When(string.IsNullOrWhiteSpace(name),
                 "Invalid name. Name is required (cannot be a white space)");
-            DomainExceptionValidation.When(Name.Length > 120,
+            DomainExceptionValidation.When(name.Length > 120,
                 $"Invalid name, too long. Maximum of characters: 120. Your name: {name.Length}!");
-            DomainExceptionValidation.When(Name.Length < 10,
+            DomainExceptionValidation.When(name.Length < 10,
                 $"Invalid name, too short. Minimum of characters: 10. Your name: {name.Length}!");
             DomainExceptionValidation.When(DomainExceptionValidation.ValidateInvalidCharacters(name),
                 "Invalid name. Name contains invalid characters.");
@@ -43,7 +43,7 @@ namespace CleanArchMvc.Domain.Entities
                 "Invalid price. Too long.");
             DomainExceptionValidation.When(stock < 0,
                 "Invalid stock. Stock is required");
-            DomainExceptionValidation.When(image.Length > 250,
+            DomainExceptionValidation.When(image?.Length > 250,
                 $"Invalid url image. The maximum of characters is 250. Your url: {image.Length}!");
             Name = name;
             Description = description;

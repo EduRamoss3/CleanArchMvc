@@ -18,17 +18,16 @@ namespace CleanArchMvc.Domain.Entities
         }
         public Category(int id, string name)
         {
-            ValidateDomain(id);
+            DomainExceptionValidation.When(id < 0,
+               "Invalid Id value. Id is required");
+            Id = id;
             ValidateDomain(name);
         }
         public void Update(string name)
         {
             ValidateDomain(name);
         }
-        public void Update(int id)
-        {
-            ValidateDomain(id);
-        }
+     
         public ICollection<Product> Products { get; set; }
 
         private void ValidateDomain(string name)
@@ -44,12 +43,7 @@ namespace CleanArchMvc.Domain.Entities
                 "Invalid name. Name contains invalid characters.");
             Name = name;
         }
-        private void ValidateDomain(int id)
-        {
-            DomainExceptionValidation.When(id < 0,
-                "Invalid Id value. Id is required");
-            Id = id;
-        }
+        
         public override int GetHashCode()
         {
             return Id.GetHashCode();
