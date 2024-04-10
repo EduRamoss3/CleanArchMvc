@@ -22,37 +22,40 @@ namespace CleanArchMvc.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<Product> CreateAsync(ProductDTO product)
+        public async Task Add(ProductDTO product)
         {
-
             var entity = _mapper.Map<Product>(product);
             await _productRepository.CreateAsync(entity);
-            return entity;
         }
 
-        public Task<Product> GetByIdAsync(int? id)
+        public async Task<ProductDTO> GetByIdAsync(int? id)
         {
-            throw new NotImplementedException();
+            var product = await _productRepository.GetByIdAsync(id);
+            return _mapper.Map<ProductDTO>(product);
         }
 
-        public Task<Product> GetProductCategoryAsync(int? id)
+        public async Task<ProductDTO> GetProductCategoryAsync(int? id)
         {
-            throw new NotImplementedException();
+            var entity = await _productRepository.GetProductCategoryAsync(id);
+            return _mapper.Map<ProductDTO>(entity);
         }
 
-        public Task<IEnumerable<Product>> GetProductsAsync()
+        public async Task<IEnumerable<ProductDTO>> GetProductsAsync()
         {
-            throw new NotImplementedException();
+            var entity = await _productRepository.GetProductsAsync();
+            return _mapper.Map<IEnumerable<ProductDTO>>(entity);
         }
 
-        public Task<Product> RemoveAsync(ProductDTO product)
+        public async Task Remove(ProductDTO product)
         {
-            throw new NotImplementedException();
+            var entity = _mapper.Map<Product>(product);
+            await _productRepository.RemoveAsync(entity);
         }
 
-        public Task<Product> UpdateAsync(ProductDTO product)
+        public async Task Update(ProductDTO product)
         {
-            throw new NotImplementedException();
+            var entity = _mapper.Map<Product>(product);
+            await _productRepository.UpdateAsync(entity);   
         }
     }
 }
