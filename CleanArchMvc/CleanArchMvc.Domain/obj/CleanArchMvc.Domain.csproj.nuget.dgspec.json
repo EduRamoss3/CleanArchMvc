@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {}
+    "C:\\Users\\Eduardo\\Source\\Repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
+    "C:\\Users\\Eduardo\\Source\\Repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\Repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
         "projectName": "CleanArchMvc.Domain",
-        "projectPath": "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "projectPath": "C:\\Users\\Eduardo\\Source\\Repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
         "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Domain\\obj\\",
         "projectStyle": "PackageReference",

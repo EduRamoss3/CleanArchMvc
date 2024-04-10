@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wPPELNMvOvfxpYKRWSy0H40qcZFC4qJK0vnn5uxUVjVJmf22pYdoGII+CiscvUkl778oljCKLHkJVxjxJ9Zkmw==",
+  "dgSpecHash": "b/XAS5/aunYJbIwoFx14hgOVCphemz4zUFQtCKKLN4sbNkh3Bwdx+ZHIqYmhEK40Dw7B7jnWl7XXlwZC0LqHXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Infra.IoC\\CleanArchMvc.Infra.IoC.csproj",
+  "projectFilePath": "C:\\Users\\Eduardo\\Source\\Repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.Infra.IoC\\CleanArchMvc.Infra.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eduardo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

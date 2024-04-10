@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "66S5rS24g0ur9+qCpyqyyFeihMzxO7Qgmpk9w0HxYn2fkKocBASm11E+iDY6oit73hUpGg8K/++ICgkRXDcvGw==",
+  "dgSpecHash": "D0USMl34xNNsq7GNGV3rXv7Ja4kdzCGD8qwSG1HDFC6z0RBpzOPWE9v1g81T7JYJ5ysk+3vlgL8yw0poqcggtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eduardo\\source\\repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.DomainTests\\CleanArchMvc.DomainTests.csproj",
+  "projectFilePath": "C:\\Users\\Eduardo\\Source\\Repos\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.DomainTests\\CleanArchMvc.DomainTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eduardo\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
