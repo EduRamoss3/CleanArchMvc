@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CleanArchMvc.Domain
-build_property.ProjectDir = C:\Users\Eduardo\source\repos\CleanArchMvc\CleanArchMvc\CleanArchMvc.Domain\
+build_property.ProjectDir = C:\Users\Eduardo\source\CleanArchMvc\CleanArchMvc\CleanArchMvc.Domain\

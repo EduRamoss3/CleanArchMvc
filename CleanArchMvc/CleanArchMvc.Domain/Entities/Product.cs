@@ -8,6 +8,7 @@ namespace CleanArchMvc.Domain.Entities
 {
     public sealed class Product : Entity
     {
+        public new int Id { get; }
         public string Name { get; private set; }
         public string Description { get; private set; }
         public decimal Price { get; private set; }
@@ -77,7 +78,7 @@ namespace CleanArchMvc.Domain.Entities
 
         public override int GetHashCode()
         {
-            return Name.GetHashCode();
+            return Id.GetHashCode();
         }
 
         public override string ToString()
