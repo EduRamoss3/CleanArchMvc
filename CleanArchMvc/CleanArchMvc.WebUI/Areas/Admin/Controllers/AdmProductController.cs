@@ -15,13 +15,14 @@ namespace CleanArchMvc.WebUI.Areas.Admin.Controllers
             _productService = productService;
         }
         [HttpGet]
-        [Route("{controller}/IndexAsync")]
-        public async Task<IActionResult> IndexAsync()
+        [Route("{controller}/Index")]
+        public async Task<IActionResult> Index()
         {
             IEnumerable<ProductDTO> productDTOs = await _productService.GetProductsAsync();
             return View(productDTOs);
         }
         [HttpGet]
+        [Route("{controller}/EditAsync/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditAsync(int id)
         {
@@ -32,24 +33,26 @@ namespace CleanArchMvc.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> EditAsync(ProductDTO product)
         {
             await _productService.Update(product);
-            return View("IndexAsync");
+            return View("Index");
         }
         [HttpGet]
-        public IActionResult CreateAsync()
+        [Route("{controller}/Create")]
+        public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateAsync(ProductDTO product)
+        [Route("{controller}/Created")]
+        public async Task<IActionResult> Created(ProductDTO product)
         {
             if (ModelState.IsValid)
             {
                 await _productService.Add(product);
-                return View("IndexAsync");
+                return RedirectToAction("Index");
             }
             ModelState.AddModelError("ErrorInvalidState", "Verifique os campos e tente novamente");
-            return View(product);
+            return View("Create",product);
             
         }
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DGnJloCtngerI3kCjhWjlf52LTntr2iD2Kg1aBqoeHSlxe1SaBgU8LHYDEjM+2UpAXL0bveHGKElI3W4ZR02Kw==",
+  "dgSpecHash": "wR1+QF1GpwLMpQ8boJw+jy6aR8hihHGMmtLhNK3YnUCPLzihAmLAW0qxlfZ7/DAakE+gr5jpq3SSSmAVivhM5Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eduardo\\source\\CleanArchMvc\\CleanArchMvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,7 @@
     "C:\\Users\\Eduardo\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\Eduardo\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",

@@ -16,16 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Eduardo\source\CleanArchMvc\CleanArchMvc\CleanArchMvc.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Eduardo/source/CleanArchMvc/CleanArchMvc/CleanArchMvc.WebUI/Areas/Admin/Views/AdmProduct/CreateAsync.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtUHJvZHVjdFxDcmVhdGVBc3luYy5jc2h0bWw=
+[C:/Users/Eduardo/source/CleanArchMvc/CleanArchMvc/CleanArchMvc.WebUI/Areas/Admin/Views/AdmProduct/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Eduardo/source/CleanArchMvc/CleanArchMvc/CleanArchMvc.WebUI/Areas/Admin/Views/AdmProduct/EditAsync.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtUHJvZHVjdFxFZGl0QXN5bmMuY3NodG1s
+[C:/Users/Eduardo/source/CleanArchMvc/CleanArchMvc/CleanArchMvc.WebUI/Areas/Admin/Views/AdmProduct/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Eduardo/source/CleanArchMvc/CleanArchMvc/CleanArchMvc.WebUI/Areas/Admin/Views/AdmProduct/IndexAsync.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtUHJvZHVjdFxJbmRleEFzeW5jLmNzaHRtbA==
+[C:/Users/Eduardo/source/CleanArchMvc/CleanArchMvc/CleanArchMvc.WebUI/Areas/Admin/Views/AdmProduct/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Eduardo/source/CleanArchMvc/CleanArchMvc/CleanArchMvc.WebUI/Areas/Admin/Views/Shared/_Layout.cshtml]

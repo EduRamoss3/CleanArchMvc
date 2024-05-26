@@ -10,6 +10,7 @@
         "dependencies": {
           "CleanArchMvc.Infra.IoC": "1.0.0",
           "FluentAssertions": "5.10.3",
+          "MediatR": "9.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16"
         },
         "runtime": {
@@ -621,6 +622,14 @@
         "resources": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "MediatR/9.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
           }
         }
       },
@@ -2665,7 +2674,8 @@
       "CleanArchMvc.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "CleanArchMvc.Domain": "1.0.0"
+          "CleanArchMvc.Domain": "1.0.0",
+          "MediatR": "9.0.0"
         },
         "runtime": {
           "CleanArchMvc.Application.dll": {}
@@ -3090,6 +3100,13 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "MediatR/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "path": "mediatr/9.0.0",
+      "hashPath": "mediatr.9.0.0.nupkg.sha512"
     },
     "MessagePack/2.1.152": {
       "type": "package",

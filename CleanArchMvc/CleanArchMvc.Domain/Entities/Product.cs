@@ -3,6 +3,7 @@ using CleanArchMvc.Domain.Validation;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CleanArchMvc.Domain.Entities
 {
@@ -18,7 +19,7 @@ namespace CleanArchMvc.Domain.Entities
         public int CategoryId { get; private set; }
         public Category Category { get; private set; }
 
-        private void ValidateDomain(string name, string description, decimal price, int stock, string image)
+        private void ValidateDomain(string name, string description, decimal price, int stock, string image, int categoryId)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name),
                 "Invalid name. Name is required");
@@ -48,31 +49,37 @@ namespace CleanArchMvc.Domain.Entities
                 "Invalid price. Too long.");
             DomainExceptionValidation.When(stock < 0,
                 "Invalid stock. Stock is required");
-            DomainExceptionValidation.When(image?.Length > 250,
-                $"Invalid url image. The maximum of characters is 250. Your url: {image.Length}!");
+            DomainExceptionValidation.When(categoryId <=  0,
+               "Invalid Category. Category is required");
+
 
             Name = name;
             Description = description;
             Price = price;
             Stock = stock;
             Image = image;
-        }
+            CategoryId = categoryId;
 
-        public Product(string name, string description, decimal price, int stock, string image)
+        }
+        public Product(string name,string description, decimal price, int categoryId)
         {
-            ValidateDomain(name, description, price, stock, image);
+            ValidateDomain(name, description, price, 0, null, categoryId);
+        }
+        public Product(string name, string description, decimal price, int stock, string image, int categoryId)
+        {
+            ValidateDomain(name, description, price, stock, image, categoryId);
         }
 
-        public Product(int id, string name, string description, decimal price, int stock, string image)
+        public Product(int id, string name, string description, decimal price, int stock, string image, int categoryId)
         {
             DomainExceptionValidation.When(Id < 0, "Invalid Id. Id is required");
             Id = id;
-            ValidateDomain(name, description, price, stock, image);
+            ValidateDomain(name, description, price, stock, image, categoryId);
         }
 
         public void Update(string name, string description, decimal price, int stock, string image, int categoryId)
         {
-            ValidateDomain(name, description, price, stock, image);
+            ValidateDomain(name, description, price, stock, image, categoryId);
             CategoryId = categoryId;
         }
 
@@ -89,6 +96,7 @@ namespace CleanArchMvc.Domain.Entities
             stringBuilder.AppendLine($"Description: {Description}");
             stringBuilder.AppendLine($"Stock: {Stock}");
             stringBuilder.AppendLine($"Price: {Price.ToString("F2", CultureInfo.InvariantCulture)}");
+            stringBuilder.AppendLine($"Category ID: {CategoryId}");
             return stringBuilder.ToString().ToUpperInvariant();
         }
 
