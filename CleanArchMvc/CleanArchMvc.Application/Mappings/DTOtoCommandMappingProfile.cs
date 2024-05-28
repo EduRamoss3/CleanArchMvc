@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CleanArchMvc.Application.Categories.Commands;
 using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Products.Commands;
 using System;
@@ -13,9 +14,10 @@ namespace CleanArchMvc.Application.Mappings
     {
         public DTOtoCommandMappingProfile()
         {
-            CreateMap<ProductDTO, ProductCreateCommand>();
-            CreateMap<ProductDTO, ProductUpdateCommand>();
-
+            CreateMap<ProductDTO, ProductCreateCommand>().ReverseMap();
+            CreateMap<ProductDTO, ProductUpdateCommand>().ReverseMap();
+            CreateMap<CategoryDTO, CategoryUpdateCommand>().ReverseMap();
+            CreateMap<CategoryDTO, CategoryCreateCommand>().ReverseMap();
         }
     }
 }
