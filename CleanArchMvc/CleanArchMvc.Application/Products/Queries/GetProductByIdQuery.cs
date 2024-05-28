@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Application.Products.Queries
 {
-    class GetProductByIdQuery : IRequest<Product>
+    public class GetProductByIdQuery : IRequest<Product>
     {
         public int Id { get; set; } 
-        public GetProductByIdQuery() {
-            Id = Id;
+        public GetProductByIdQuery(int id) {
+            Id = id;
         }    
     }
 }

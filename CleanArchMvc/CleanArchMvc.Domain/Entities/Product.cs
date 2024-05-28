@@ -9,7 +9,6 @@ namespace CleanArchMvc.Domain.Entities
 {
     public sealed class Product : Entity
     {
-        public new int Id { get; }
         public string Name { get; private set; }
         public string Description { get; private set; }
         public decimal Price { get; private set; }
@@ -51,8 +50,6 @@ namespace CleanArchMvc.Domain.Entities
                 "Invalid stock. Stock is required");
             DomainExceptionValidation.When(categoryId <=  0,
                "Invalid Category. Category is required");
-
-
             Name = name;
             Description = description;
             Price = price;
