@@ -50,5 +50,12 @@ namespace CleanArchMvc.Infra.Data.Repositories
                 .Include(p => p.Category)
                 .SingleOrDefaultAsync(p => p.Id == id);
         }
+
+        public async Task<Product> PatchNameAsync(Product product)
+        {
+            _context.Entry(product).Property(p => p.Name).IsModified = true;
+            await _context.SaveChangesAsync();
+            return product;
+        }
     }
 }

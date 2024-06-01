@@ -56,6 +56,16 @@ namespace CleanArchMvc.Application.Services
             return _mapper.Map<IEnumerable<ProductDTO>>(result);
         }
 
+        public async Task PatchName(string name, int id)
+        {
+            var productPatchCommand = new ProductPatchCommand(id, name);
+            if (productPatchCommand is null)
+            {
+                throw new ApplicationException($"Entity coul not be loaded");
+            }
+             await _mediator.Send(productPatchCommand);
+        }
+
         public async Task Remove(ProductDTO product)
         {
             var productRemoveCommand = new ProductRemoveCommand(product.Id);

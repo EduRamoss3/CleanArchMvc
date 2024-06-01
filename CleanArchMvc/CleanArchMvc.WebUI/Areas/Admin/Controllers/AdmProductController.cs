@@ -1,6 +1,7 @@
 ﻿using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Domain.Entities;
+using CleanArchMvc.WebUI.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchMvc.WebUI.Areas.Admin.Controllers
@@ -9,10 +10,12 @@ namespace CleanArchMvc.WebUI.Areas.Admin.Controllers
     public class AdmProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
-        public AdmProductController(IProductService productService)
+        public AdmProductController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
+            _categoryService = categoryService;
         }
         [HttpGet]
         [Route("{controller}/Index")]
@@ -37,9 +40,13 @@ namespace CleanArchMvc.WebUI.Areas.Admin.Controllers
         }
         [HttpGet]
         [Route("{controller}/Create")]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            return View();
+            CreateProductViewModel createProductViewModel = new CreateProductViewModel()
+            {
+                Categories = await _categoryService.GetCategories()
+            };
+            return View(createProductViewModel);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -51,8 +58,14 @@ namespace CleanArchMvc.WebUI.Areas.Admin.Controllers
                 await _productService.Add(product);
                 return RedirectToAction("Index");
             }
+            CreateProductViewModel createProductViewModel = new CreateProductViewModel()
+            {
+                Product = product,
+                Categories = await _categoryService.GetCategories()
+            };
+
             ModelState.AddModelError("ErrorInvalidState", "Verifique os campos e tente novamente");
-            return View("Create",product);
+            return View("Create", createProductViewModel);
             
         }
     }

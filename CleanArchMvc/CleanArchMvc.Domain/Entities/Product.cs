@@ -79,7 +79,10 @@ namespace CleanArchMvc.Domain.Entities
             ValidateDomain(name, description, price, stock, image, categoryId);
             CategoryId = categoryId;
         }
-
+        public void UpdateName(string name)
+        {
+            Name = name;
+        }
         public override int GetHashCode()
         {
             return Id.GetHashCode();

@@ -10,6 +10,7 @@ namespace CleanArchMvc.Domain.Interfaces
         Task<Product> CreateAsync(Product product);
         Task<Product> UpdateAsync(Product product);
         Task<Product> RemoveAsync(Product product);
+        Task<Product> PatchNameAsync(Product product);
 
     }
 }

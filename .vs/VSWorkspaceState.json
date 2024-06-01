@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\CleanArchMvc",
-    "\\CleanArchMvc\\CleanArchMvc.Application",
-    "\\CleanArchMvc\\CleanArchMvc.Application\\Products",
-    "\\CleanArchMvc\\CleanArchMvc.Application\\Products\\Commands",
-    "\\CleanArchMvc\\CleanArchMvc.Application\\Products\\Handlers",
-    "\\CleanArchMvc\\CleanArchMvc.Application\\Products\\Queries",
-    "\\CleanArchMvc\\CleanArchMvc.Application\\Services"
+    ""
   ],
-  "SelectedNode": "\\CleanArchMvc\\CleanArchMvc.Application\\Services\\ProductServices.cs",
+  "SelectedNode": "\\CleanArchMvc.sln",
   "PreviewInSolutionExplorer": false
 }

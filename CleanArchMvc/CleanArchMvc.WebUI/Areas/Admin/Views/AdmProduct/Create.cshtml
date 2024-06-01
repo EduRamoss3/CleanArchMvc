@@ -1,5 +1,6 @@
 ﻿@using CleanArchMvc.Application.DTOs;
-@model ProductDTO 
+@using CleanArchMvc.WebUI.ViewModel;
+@model CreateProductViewModel
 
 @{
     ViewData["Title"] = "Adicionar Novo Produto";
@@ -13,24 +14,26 @@
             <div asp-validation-summary="All"></div>
             <form asp-area="Admin" asp-controller="AdmProduct" asp-action="Created" method="post">
                 <div class="form-group">
-                    <label asp-for="Name">Nome</label>
-                    <input asp-for="Name" class="form-control" />
-                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <label asp-for="@Model.Product.Name">Nome</label>
+                    <input asp-for="@Model.Product.Name" class="form-control" />
+                    <span asp-validation-for="@Model.Product.Name" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Price">Preço</label>
-                    <input asp-for="Price" class="form-control" />
-                    <span asp-validation-for="Price" class="text-danger"></span>
+                    <label asp-for="@Model.Product.Price">Preço</label>
+                    <input asp-for="@Model.Product.Price" class="form-control" />
+                    <span asp-validation-for="@Model.Product.Price" class="text-danger"></span>
                 </div>
+                <label class="form-label">Escolha uma Categoria</label>
+                <select asp-for="@Model.Product.CategoryId" class="form-select">
+                    @foreach(CategoryDTO c in Model.Categories)
+                    {
+                        <option value="@c.Id">@c.Name</option>
+                    }
+                </select>
                 <div class="form-group">
-                    <label asp-for="CategoryId">Categoria</label>
-                    <input asp-for="CategoryId" class="form-control" />
-                    <span asp-validation-for="CategoryId" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Description">Descrição</label>
-                    <input asp-for="Description" class="form-control" />
-                    <span asp-validation-for="Description" class="text-danger"></span>
+                    <label asp-for="@Model.Product.Description">Descrição</label>
+                    <input asp-for="@Model.Product.Description" class="form-control" />
+                    <span asp-validation-for="@Model.Product.Description" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Salvar</button>
