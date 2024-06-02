@@ -1,3 +1,5 @@
+using CleanArchMvc.Domain.Account;
+using CleanArchMvc.Infra.Data.Identity;
 using CleanArchMvc.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,11 +17,14 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+CriarPerfisUsuarios(app);
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 
@@ -36,3 +41,13 @@ app.UseEndpoints(endpoints =>
 });
 
 app.Run();
+void CriarPerfisUsuarios(WebApplication app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<ISeedUserRoleInitial>();
+        service.SeedRoles();
+        service.SeedUsers();
+    }
+}

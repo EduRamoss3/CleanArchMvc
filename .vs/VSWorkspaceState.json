@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CleanArchMvc",
+    "\\CleanArchMvc\\CleanArchMvc.Application",
+    "\\CleanArchMvc\\CleanArchMvc.Domain",
+    "\\CleanArchMvc\\CleanArchMvc.Domain\\Entities",
+    "\\CleanArchMvc\\CleanArchMvc.Infra.IoC",
+    "\\CleanArchMvc\\CleanArchMvc.WebUI",
+    "\\CleanArchMvc\\CleanArchMvc.WebUI\\Areas",
+    "\\CleanArchMvc\\CleanArchMvc.WebUI\\Areas\\Admin",
+    "\\CleanArchMvc\\CleanArchMvc.WebUI\\Areas\\Admin\\Controllers"
   ],
-  "SelectedNode": "\\CleanArchMvc.sln",
+  "SelectedNode": "\\CleanArchMvc\\CleanArchMvc.Infra.IoC\\DependencyInjection.cs",
   "PreviewInSolutionExplorer": false
 }
